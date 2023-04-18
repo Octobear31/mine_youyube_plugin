@@ -53,7 +53,7 @@ const RightSide = ({ activeTab }) => {
       <div className="flex w-full justify-center  ">
         <button
           onClick={handleSave}
-          className="w-1/6 bg-[#5B4E96] text-white py-2 px-4 mt-10 rounded hover:bg-[#5543a5] active:bg-purple-950 shadow-md"
+          className="w-3/6 md:w-1/6 lg:w-1/6 bg-[#5B4E96] text-white py-2 px-4 mt-10 rounded hover:bg-[#5543a5] active:bg-purple-950 shadow-md"
         >
           Save
         </button>
