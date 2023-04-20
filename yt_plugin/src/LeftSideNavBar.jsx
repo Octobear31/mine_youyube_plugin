@@ -13,7 +13,7 @@ const LeftSideNavBar = (props) => {
               props.activeTab === "general" && "bg-[#5B4E96] text-white"
             }`}
           >
-            <FontAwesomeIcon icon={faGear} className="md:mr-2 lg:mr-2" />
+            <FontAwesomeIcon icon={faGear} className="" />
             <span className="uppercase hidden md:inline lg:inline">
               General
             </span>
@@ -24,7 +24,7 @@ const LeftSideNavBar = (props) => {
               props.activeTab === "channel" && "bg-[#5B4E96] text-white"
             }`}
           >
-            <FontAwesomeIcon icon={faYoutube} className="md:mr-2 lg:mr-2" />
+            <FontAwesomeIcon icon={faYoutube} className="" />
             <span className="uppercase hidden md:inline lg:inline">
               Channel Videos
             </span>
