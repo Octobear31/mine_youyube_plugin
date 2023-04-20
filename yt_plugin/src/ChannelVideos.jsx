@@ -1,3 +1,5 @@
+import Switch from "./Switch";
+
 const ChannelVideos = (props) => {
   return (
     <form className="flex flex-col gap-6 ">
@@ -68,65 +70,47 @@ const ChannelVideos = (props) => {
         <label htmlFor="showTitle" className="w-2/5">
           Show title:
         </label>
-        <label className="relative inline-flex items-center cursor-pointer">
-          <input
-            type="checkbox"
-            checked={props.data.showTitle}
-            name="showTitle"
-            id="showTitle"
-            className="sr-only peer"
-            onChange={props.handleInputChange}
-          />
-          <div className="w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#5543a5]"></div>
-        </label>
+        <Switch
+          type="checkbox"
+          checked={props.data.showTitle}
+          name="showTitle"
+          id="showTitle"
+          className="sr-only peer"
+          onChange={props.handleInputChange}
+        />
       </div>
       <div className="flex items-center justify-between md:justify-normal lg:justify-normal">
         <label htmlFor="showDuration" className="w-2/5">
           Show duration:
         </label>
-        <label className="relative inline-flex items-center cursor-pointer">
-          <input
-            type="checkbox"
-            checked={props.data.showDuration}
-            name="showDuration"
-            id="showDuration"
-            className="sr-only peer"
-            onChange={props.handleInputChange}
-          />
-          <div className="w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#5543a5]"></div>
-        </label>
+        <Switch
+          checked={props.data.showDuration}
+          name="showDuration"
+          id="showDuration"
+          onChange={props.handleInputChange}
+        />
       </div>
       <div className="flex items-center justify-between md:justify-normal lg:justify-normal">
         <label htmlFor="showViewCount" className="w-2/5">
           Show view count:
         </label>
-        <label className="relative inline-flex items-center cursor-pointer">
-          <input
-            type="checkbox"
-            checked={props.data.showViewCount}
-            name="showViewCount"
-            id="showViewCount"
-            className="sr-only peer"
-            onChange={props.handleInputChange}
-          />
-          <div className="w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#5543a5]"></div>
-        </label>
+        <Switch
+          checked={props.data.showViewCount}
+          name="showViewCount"
+          id="showViewCount"
+          onChange={props.handleInputChange}
+        />
       </div>
       <div className="flex items-center justify-between md:justify-normal lg:justify-normal">
         <label htmlFor="showLoadMore" className="w-2/5">
           Show load more button:
         </label>
-        <label className="relative inline-flex items-center cursor-pointer">
-          <input
-            type="checkbox"
-            checked={props.data.showLoadMore}
-            name="showLoadMore"
-            id="showLoadMore"
-            className="sr-only peer"
-            onChange={props.handleInputChange}
-          />
-          <div className="w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#5543a5]"></div>
-        </label>
+        <Switch
+          checked={props.data.showLoadMore}
+          name="showLoadMore"
+          id="showLoadMore"
+          onChange={props.handleInputChange}
+        />
       </div>
       <div className="flex items-center justify-between md:justify-normal lg:justify-normal">
         <label htmlFor="maxResult" className="w-2/5">

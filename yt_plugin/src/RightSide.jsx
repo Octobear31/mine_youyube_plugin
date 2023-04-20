@@ -10,10 +10,10 @@ const RightSide = ({ activeTab }) => {
     width: "320",
     height: "180",
     order: "",
-    showTitle: "",
-    showDuration: "",
-    showViewCount: "",
-    showLoadMore: "",
+    showTitle: false,
+    showDuration: false,
+    showViewCount: false,
+    showLoadMore: false,
     maxResult: "22",
   });
 
